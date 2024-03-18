@@ -4,18 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="Screenshots for page 1">
   <title>Screenshot 1 page</title>
   <link rel="stylesheet" href="assets/styles/style.css">
+
 </head>
 
 <body>
 
-  <!-- Header wit Logo and NAV bar-->
+  <!-- Header with Logo and NAV bar-->
   <header>
     <nav class="navbar">
 
       <a href="/">
         <span class="navbar__link blueline">
+          <a href="/">
           <img class="navbar__logo" src="Images/Finnlogo.png" alt="Finn.no logo">
           Mulighetens marked</span></a>
 
@@ -28,12 +31,17 @@
     </nav>
   </header>
 
+<!--SEATCH BAR-->
+
   <div class="search">
     <input class="search__input" type="search" id="searchInput" name="search" placeholder="Søk etter Finn Kode">
     <button class="search__button" type="submit"></button>
+   <a href="/">
+    <img src="Images/map.png" alt="Map">
+  </a>
   </div>
 
-  <!-- Buttons for the different markeds-->
+  <!-- Buttons for the different markeds, with LOADS of SVG's-->
 
   <div class="grid-container">
     <a href="/" class="grid-item">
@@ -161,8 +169,8 @@
         <span class="grid-item__text">Nybrukt mobil</span>
       </a>
       <a href="/" class="grid-item">
-        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
-          part="w-icon-honk-light-42-part">
+        <svg class="grid-item__link" xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none"
+          viewBox="0 0 42 28" part="w-icon-honk-light-42-part">
           <title>Honk lyst ikon</title>
           <path fill="#570E2D"
             d="M27.34 2a5.66 5.66 0 1 0 0 11.32 5.66 5.66 0 0 0 0-11.32m0 8.572a2.912 2.912 0 1 1 0-5.823 2.912 2.912 0 0 1 0 5.823m-9.768 4.108v7.33l-5.049-7.33H9V26h2.749v-8.454L17.572 26h2.749V14.68zM29.799 26H33l-4.576-6.553 4.264-4.768H29.58l-5.152 5.991v-5.99H21.68V26h2.75v-2.084l2.197-2.458L29.798 26ZM17.572 2v4.436h-5.823V2H9v11.32h2.749V8.885h5.823v4.437h2.749V2z">
@@ -171,7 +179,7 @@
         <span class="grid-item__text">Bilabonnement</span>
       </a>
       <a href="/" class="grid-item">
-        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
+        <svg class="grid-item__link" xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
           part="w-icon-nettbil-light-42-part">
           <title>Nettbil</title>
           <path fill="#044046"
@@ -182,7 +190,7 @@
         <span class="grid-item__text">Nettbil</span>
       </a>
       <a href="/" class="grid-item">
-        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
+        <svg class="grid-item__link" xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
           part="w-icon-remppatori-light-42-part">
           <title>Remppatori lyst ikon</title>
           <path fill="#101F41" d="M17.08 1.961 7.002 12.007l2.8 2.791 10.08-10.046-2.8-2.79Z"></path>
@@ -195,27 +203,41 @@
         <span class="grid-item__text">Mittanbud</span>
       </a>
   </div>
+  <div class="reccomended">
+    <h2>Anbefalinger til deg </h2> <a href="/">Hvorfor anbefaler vi dette til deg?</a>
+  </div>
   <div class="card-container">
     <div class="card">
-      <div class="card__content">
-        <img src="Images/cooldog.jpg" alt="the coolest dog">
-        <button class="card__heart">&#x2665;</button>
-
-        <p class="card__location"> Oslo</p>
-      </div>
+      <a href="/" class="card__link">
+        <div class="card__content">
+          <img src="Images/cooldog.jpg" alt="the coolest dog">
+      </a>
+      <button class="card__heart">&#x2665;</button>
+      <p class="card__location"> Oslo</p>
+      <h3 class card__description> Classy pug with a margherita
     </div>
-    <div class="card">
+  </div>
+  <div class="card">
+    <a href="/" class="card__link">
       <div class="card__content">
         <img src="Images/cooldog2.jpg" alt="the 2nd coolest dog">
-        <p>Trondheim</p>
-      </div>
-    </div>
-    <div class="card">
+    </a>
+    <button class="card__heart">&#x2665;</button>
+    <p class="card__location">Trondheim</p>
+    <h3 class card__description> Frenchie minding his business </h3>
+  </div>
+  </div>
+  <div class="card">
+    <a href='/' class="card__link">
       <div class="card__content">
         <img src="Images/cooldog3.jpg" alt="Third coolest dawg">
-        <p>Gjøvik</p>
-      </div>
-    </div>
+        <button class="card__heart">&#x2665;</button>
+    </a>
+    <p class="card__location">Gjøvik</p>
+    <h3 class card__description> The beagle CEO</h3>
+    </a>
+  </div>
+  </div>
   </div>
 
 </body>

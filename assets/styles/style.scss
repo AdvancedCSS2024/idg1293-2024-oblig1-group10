@@ -1,237 +1,243 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 
-
-body{
-    margin-left: 400px;
-    margin-right: 400px;
+body {
+  margin-right: 20%;
+  margin-left: 20%;
 }
-
-
 
 // SCREENSHOT 1
 
-
 // HEADER AND NAV
 
-.navbar{
-    border-bottom: 10px solid gray;
-    display: flex;
-    
+.navbar {
+  border-bottom: 10px solid gray;
+  display: flex;
 
-    img{
-        max-width: 13%;
-        padding-right: 1%;
-    }
+  img {
+    max-width: 13%;
+    padding-right: 1%;
+  }
 
-    &__link{
-        display: flex;
-        align-items: center;
-        
-    }
-
-    a{
-        color: black;
-        text-decoration: none;
-        width: fit-content;
-        display: flex;
-        align-items: center;
-    
-        
-    }
-
-// Blue line underneath left logo
-
-    .blueline{
-
-        position: relative;  
-    text-decoration: none; 
-    transition: color 0.3s ease; 
-   
-    }
-
-
-
-    .blueline::after{
-    content: ''; 
-    position: absolute; 
-    left: 0; 
-    bottom: -3px; 
-    width: 100%; 
-    height: 5px; 
-    background-color: transparent; 
-    transition: background-color 0.25s ease; 
-    }
-
-    .blueline:hover::after {
-        background-color: blue;
-    }
-
-&__buttons{
-    display: flex;
-    margin-right: 5px;
-  
-    
-    a{
-        width: 130px;
-    }
-    img{
-        max-width: 200%;
-    }
-    
-// Blue line underneath NAV elements
-
-    &__buttons::after{
-        content: ''; 
-        position: absolute; 
-        left: 0; 
-        bottom: -3px; 
-        width: 100%; 
-        height: 5px; 
-        background-color: transparent; 
-        transition: background-color 0.25s ease; 
-    }
-
-    &__buttons:hover::after{
-        background-color: blue;
-    }
-}
-
-    
-}
-
-// INPUT SPACE
-
-
-.search {
+  &__link {
     display: flex;
     align-items: center;
-}
+  }
 
-.search__input {
-    margin-top: 50px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 5px;
-    width: 100%;
-}
-
-
-.search {
-    position: relative; 
+  a {
+    color: black;
+    text-decoration: none;
+    width: fit-content;
     display: flex;
     align-items: center;
-}
+  }
 
-.search__input {
-    padding: 8px 30px 8px 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  // Blue line underneath left logo
+
+  .blueline {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .blueline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
     width: 100%;
-    max-width: 100%;
+    height: 5px;
+    background-color: transparent;
+    transition: background-color 0.25s ease;
+  }
+  .blueline:hover::after {
+    background-color: blue;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-right: 5px;
+
+    a {
+      width: 130px;
+    }
+    img {
+      max-width: 200%;
+    }
+
+    // Blue line underneath NAV elements
+
+    &__buttons::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 100%;
+      height: 5px;
+      background-color: transparent;
+      transition: background-color 0.25s ease;
+    }
+
+    &__buttons:hover::after {
+      background-color: blue;
+    }
+  }
 }
 
+// SEARCH BAR / INPUT SPACE
 
-.search__button {
-    position: absolute; 
-    right: 15px;
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+
+  &__input {
+    padding: 8px 12px; 
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    margin-top: 70px;
+    width: 80%;
+    
+    &:focus {
+      outline: none;
+      border-color: #06befb;
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 240px;
     top: 80%;
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-    background-image: url('/Images/Glass.jpg');
-    background-size: cover; 
+    background-image: url("/Images/Glass.jpg");
+    background-size: cover;
     border: none;
     cursor: pointer;
+  }
+
+  & img {
+    margin-top: 70px;
+  }
 }
 
 // GRID BUTTONS
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 10px;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10px;
+  width: 100%;
 }
 
-
 .grid-item {
-    margin-top: 30px;
-    padding: 20px;
-    text-align: center;
-    position: relative;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & svg {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .svg-icon {
+    stroke: #06befb;
+    transition: fill 0.3s, stroke 0.3s;
+
     
-
-    & svg {
-        width: 80%;
-        height: auto;
-        display: block;
-        margin-bottom: 10px;
+    &:hover {
+      fill: #ccc;
+      stroke: #ccc;
     }
-    .svg-icon {
+  }
 
-        stroke: #06befb; 
-        transition: fill 0.3s, stroke 0.3s; 
-    
-        // Define hover effect
-        &:hover {
-            fill: #ccc; 
-            stroke: #ccc; 
-        }
-    }
+  &__link:hover {
+    background-color: grey;
+  }
 
-    &__text{
-        text-decoration: none;
-        color: black;
-        
-    }
+  &__text {
+    text-decoration: none;
+    color: black;
+  }
+}
 
+//RECcOMONDATIONS
+.reccomended {
+  display: flex;
+  align-items: center;
+
+  & h2 {
+    margin-right: 50px;
+  }
+
+  & a {
+    color: #0063fb;
+    font-family: se;
+  }
 }
 
 // CARDS
 
-
 .card-container {
-    display: flex; 
-    justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
 
-
 .card-container {
-    display: flex; 
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-
 
 .card {
-    position: relative; 
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex: 1; 
-    max-width: calc(33.33% - 20px); 
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  max-width: calc(33.33% - 20px);
+  transition: background-color 0.3s; // Smooth transition for hover effect
+  margin: 10px;
 
-    & img{
-        max-width: 100%;
-    }
+  & img {
+    max-width: 100%;
+  }
 
-    &__content {
-        font-size: 16px; 
-    }
+  &__content {
+    font-size: 16px;
+  }
 
-    &__heart {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        font-size: 20px; 
-        color: red; 
-        border: none; 
-        background-color: transparent; 
-        cursor: pointer;
-    }
+  &__heart {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    color: red;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__location {
+    color: gray;
+  }
+
+  &:hover {
+    background-color: #add8e6; // Light blue hover effect for the whole card
+  }
 }
+
+
+
+
+// PAGE TWO
+
