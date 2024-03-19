@@ -194,9 +194,9 @@
   box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   width: 400px;
-  height: 500px;
+  height: auto;
+  margin-right: 0;
   margin-left: auto;
-  margin-top: 20%;
 }
 .login-card__logo {
   max-width: 100%;
@@ -218,11 +218,16 @@
 .login-card__login {
   width: 100%;
   padding: 10px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
   background-color: rgb(236, 234, 234);
+}
+.login-card__login:focus {
+  outline: none;
+  border-color: #06befb;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
 }
 .login-card__login-hint {
   display: block;
@@ -232,12 +237,14 @@
   margin-bottom: 16px;
 }
 .login-card__actions {
-  margin-top: 20px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .login-card__button {
   width: 100%;
-  padding: 20px;
+  padding: 12px;
+  margin-top: 10px;
   border: none;
   border-radius: 4px;
   background: #007bff;
@@ -248,21 +255,49 @@
 .login-card__button--secondary {
   background: none;
   color: #007bff;
-  margin-top: 10px;
+  padding: 12px;
 }
 .login-card__link {
   color: #007bff;
   display: block;
-  margin-top: 10px;
 }
 .login-card__checkbox {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .login-card__checkbox-label {
   display: flex;
   align-items: center;
+  margin: 0;
 }
 .login-card__checkbox-input {
   margin-right: 10px;
+}
+.login-card__checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login-card__checkbox-image {
+  width: 24px;
+  height: 24px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.login-card__footer {
+  text-align: center;
+  margin-top: 5px;
+  width: 400px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.login-card__footer-link {
+  color: #757575;
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.login-card__footer-link:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
