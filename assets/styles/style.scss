@@ -1,9 +1,6 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 
-body {
-  margin-right: 20%;
-  margin-left: 20%;
-}
+
 
 // SCREENSHOT 1
 
@@ -240,80 +237,103 @@ body {
 
 // PAGE TWO
 
+//Base styling for log in card
 .login-card {
 background: #fff;
 padding: 20px;
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
 border-radius: 8px;
-width: 300px;
-}
+width: 400px;
+height: 500px;
+margin-left: auto;
+margin-top: 20%;
 
-.login-card__logo {
+// Style for logos
+&__logo {
   max-width: 100%;
   display: block;
   margin-right: auto;
   height: 10px;
 }
 
-.login-card__logo2 {
+&__logo2 {
   max-width: 100%;
   display: block;
   margin-left: auto;
-  height: 20px;
+  height: 15px;
 }
-
-.login-card__title {
+// Title for card
+&__title {
   font-size: 24px;
   margin: 20px 0;
   text-align: left;
 }
 
-.login-card__input {
+//Input styles for email and password fields
+&__login {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: rgb(236, 234, 234);
 }
 
-.login-card__actions {
+&__login-hint {
+  display: block;
+  text-align: left;
+  color: #757575;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+
+// Container for action elements like buttons and links
+&__actions {
   margin-top: 20px;
+  padding: 20px;
 }
 
-.login-card__button {
+//Styling for log in button
+&__button {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   border: none;
   border-radius: 4px;
   background: #007bff;
   color: white;
   cursor: pointer;
   text-transform: uppercase;
+
 }
 
-.login-card__button--secondary {
-  background: #ddd;
-  color: #333;
+//Styling for create acc button 
+&__button--secondary {
+  background: none;
+  color: #007bff;
   margin-top: 10px;
+
 }
 
-.login-card__link {
-  text-decoration: none;
+&__link {
+  
   color: #007bff;
   display: block;
   margin-top: 10px;
 }
 
-.login-card__checkbox {
-  margin-top: 20px;
+//Styling for checkbox
+&__checkbox {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.login-card__checkbox-label {
+&__checkbox-label {
   display: flex;
   align-items: center;
 }
 
-.login-card__checkbox-input {
+&__checkbox-input {
   margin-right: 10px;
+}
 }
