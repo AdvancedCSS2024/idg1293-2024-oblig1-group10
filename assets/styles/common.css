@@ -1,1 +1,28 @@
-/*# sourceMappingURL=common.css.map */
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 8%;
+}
+
+.blueline {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.blueline .blueline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  transition: background-color 0.25s ease;
+}
+.blueline .blueline:hover::after {
+  background-color: blue;
+}
+.blueline img {
+  max-width: 15%;
+}/*# sourceMappingURL=common.css.map */

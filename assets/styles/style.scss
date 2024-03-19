@@ -1,20 +1,24 @@
 // USE THIS FILE TO CREATE THE LAYOUT AND SPECIFIC RULES FOR SCREENSHOTS 1 and 2
 
-body {
-  margin-right: 20%;
-  margin-left: 20%;
-}
 
 // SCREENSHOT 1
 
+.screenshot1 {
+  margin-right: 20%;
+  margin-left: 20%;
+  font-family: Arial, sans-serif;
+}
+
 // HEADER AND NAV
+
+
 
 .navbar {
   border-bottom: 2px solid gray;
   display: flex;
 
   img {
-    max-width: 13%;
+    max-width: 4vw;
     padding-right: 1%;
   }
 
@@ -45,7 +49,7 @@ body {
     left: 0;
     bottom: -3px;
     width: 100%;
-    height: 5px;
+    height: 3px;
     transition: background-color 0.25s ease;
   }
   .blueline:hover::after {
@@ -92,7 +96,7 @@ body {
 
   &__input {
     padding: 8px 12px; 
-    border: 3px solid #ccc;
+    border: 2px solid #ccc;
     border-radius: 4px;
     transition: border-color 0.3s, box-shadow 0.3s; 
     margin-top: 70px;
@@ -107,11 +111,11 @@ body {
 
   &__button {
     position: absolute;
-    right: 240px;
+    right: 21%;
     top: 80%;
     transform: translateY(-50%);
-    width: 24px;
-    height: 24px;
+    width: 4vh;
+    height: 4vh;
     background-image: url("/Images/Glass.jpg");
     background-size: cover;
     border: none;
@@ -120,6 +124,7 @@ body {
 
   & img {
     margin-top: 70px;
+    padding-left: 35%;
   }
 }
 
@@ -150,7 +155,7 @@ body {
   }
   .svg-icon {
     stroke: #06befb;
-    transition: fill 0.3s, stroke 0.3s;
+    transition: fill 0.1s, stroke 0.1s;
 
     
     &:hover {
@@ -160,7 +165,7 @@ body {
   }
 
   &__link:hover {
-    background-color: grey;
+    stroke:#ccc;
   }
 
   &__text {
@@ -180,7 +185,6 @@ body {
 
   & a {
     color: #0063fb;
-    font-family: se;
   }
 }
 
@@ -203,7 +207,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   flex: 1;
-  max-width: calc(33.33% - 20px);
+  max-width: 100%;
   transition: background-color 0.3s; 
   margin: 10px;
 
@@ -224,6 +228,14 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+  }
+  &__text {
+    position: fixed;
+    bottom: 20px; // Distance from the bottom of the card
+    left: 10px; // Distance from the left side of the card
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5); // Optional: improves readability
+    padding: 5px; // Optional: space inside the text box
   }
 
   &__location {
