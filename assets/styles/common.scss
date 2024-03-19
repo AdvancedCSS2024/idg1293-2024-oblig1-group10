@@ -5,16 +5,19 @@
 // PAGE ONE
 
 
-
 // HEADER / NAV BAR BLUE LINE UNDERNEATH WHEN HOVERED
 
 
 h1, h2{
-  text-align: center;
+  text-align: left
 }
 
 h2{ 
   margin-top: 8%
+}
+
+p{
+  max-width: 60%;
 }
 
 .blueline {
@@ -38,10 +41,145 @@ h2{
 & img{
   max-width:15%;
 }
-
-
-
 }
+
+// Search bar
+
+// SEARCH BAR / INPUT SPACE
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+
+  &__input {
+    padding: 8px 12px; 
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    margin-top: 70px;
+    width: 80%;
+    
+    &:focus {
+      outline: none;
+      border-color: #06befb;
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 21%;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 4vh;
+    height: 4vh;
+    background-image: url("/Images/Glass.jpg");
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+//Buttons for grid items
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  width: 30%;
+}
+
+.grid-item {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+
+  & svg {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .svg-icon {
+    stroke: #06befb;
+    transition: fill 0.1s, stroke 0.1s;
+
+    
+    &:hover {
+      fill: #ccc;
+      stroke: #ccc;
+    }
+  }
+
+  &__link:hover {
+    stroke:#ccc;
+  }
+
+  &__text {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  max-width: 20%;
+  transition: background-color 0.3s; 
+  margin: 10px;
+
+  & img {
+    max-width: 100%;
+  }
+
+  &__content {
+    font-size: 16px;
+  }
+
+  &__heart {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    color: red;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__text {
+    position: fixed;
+    bottom: 20px; // Distance from the bottom of the card
+    left: 10px; // Distance from the left side of the card
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5); // Optional: improves readability
+    padding: 5px; // Optional: space inside the text box
+  }
+
+  &__location {
+    color: gray;
+  }
+
+  &:hover {
+    background-color: #add8e6; 
+  }
+}
+
 
 
 
