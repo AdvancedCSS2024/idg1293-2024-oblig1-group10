@@ -181,6 +181,80 @@ p{
 }
 
 
+//page two
+.login-card{
+max-width: 50%;
+
+&__login {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgb(236, 234, 234);
+
+  &:focus {
+    outline: none;
+    border-color: #06befb;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+  }
+}
+
+&__login-hint {
+  display: block;
+  text-align: left;
+  color: #757575;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+//Styling for checkbox
+&__checkbox {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+&__checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+&__checkbox-input {
+  margin-right: 10px;
+}
+
+&__checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+//Styling for log in button
+&__button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+
+}
+
+//Styling for create acc button 
+&__button--secondary {
+  background: none;
+  color: #007bff;
+  padding: 12px;
+
+}
+}
+
+
+
 
 
 
