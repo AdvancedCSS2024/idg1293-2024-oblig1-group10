@@ -191,4 +191,82 @@ body {
 }
 .card:hover {
   background-color: #add8e6;
+}
+
+.login-card {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 300px;
+}
+
+.login-card__logo {
+  max-width: 100%;
+  display: block;
+  margin-right: auto;
+  height: 10px;
+}
+
+.login-card__logo2 {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  height: 20px;
+}
+
+.login-card__title {
+  font-size: 24px;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.login-card__input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-card__actions {
+  margin-top: 20px;
+}
+
+.login-card__button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.login-card__button--secondary {
+  background: #ddd;
+  color: #333;
+  margin-top: 10px;
+}
+
+.login-card__link {
+  text-decoration: none;
+  color: #007bff;
+  display: block;
+  margin-top: 10px;
+}
+
+.login-card__checkbox {
+  margin-top: 20px;
+}
+
+.login-card__checkbox-label {
+  display: flex;
+  align-items: center;
+}
+
+.login-card__checkbox-input {
+  margin-right: 10px;
 }/*# sourceMappingURL=style.css.map */
