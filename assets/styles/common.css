@@ -1,1 +1,149 @@
-/*# sourceMappingURL=common.css.map */
+h1, h2 {
+  text-align: left;
+}
+
+h2 {
+  margin-top: 8%;
+}
+
+p {
+  max-width: 60%;
+}
+
+.blueline {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.blueline .blueline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  transition: background-color 0.25s ease;
+}
+.blueline .blueline:hover::after {
+  background-color: blue;
+}
+.blueline img {
+  max-width: 15%;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search__input {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-top: 70px;
+  width: 80%;
+}
+.search__input:focus {
+  outline: none;
+  border-color: #06befb;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+.search__button {
+  position: absolute;
+  right: 21%;
+  top: 80%;
+  transform: translateY(-50%);
+  width: 4vh;
+  height: 4vh;
+  background-image: url("/Images/Glass.jpg");
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  width: 30%;
+}
+
+.grid-item {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+.grid-item svg {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.grid-item .svg-icon {
+  stroke: #06befb;
+  transition: fill 0.1s, stroke 0.1s;
+}
+.grid-item .svg-icon:hover {
+  fill: #ccc;
+  stroke: #ccc;
+}
+.grid-item__link:hover {
+  stroke: #ccc;
+}
+.grid-item__text {
+  text-decoration: none;
+  color: black;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  max-width: 20%;
+  transition: background-color 0.3s;
+  margin: 10px;
+}
+.card img {
+  max-width: 100%;
+}
+.card__content {
+  font-size: 16px;
+}
+.card__heart {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  color: red;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card__text {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+.card__location {
+  color: gray;
+}
+.card:hover {
+  background-color: #add8e6;
+}/*# sourceMappingURL=common.css.map */

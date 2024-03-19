@@ -5,160 +5,184 @@
 // PAGE ONE
 
 
-
 // HEADER / NAV BAR BLUE LINE UNDERNEATH WHEN HOVERED
 
+
+h1, h2{
+  text-align: left
+}
+
+h2{ 
+  margin-top: 8%
+}
+
+p{
+  max-width: 60%;
+}
+
 .blueline {
-    position: relative;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-
-  .blueline::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 100%;
-    height: 5px;
-    background-color: transparent;
-    transition: background-color 0.25s ease;
-  }
-  .blueline:hover::after {
-    background-color: blue;
-  }
-
-  &__buttons {
-    display: flex;
-    margin-right: 5px;
-
-    a {
-      width: 130px;
-    }
-    img {
-      max-width: 200%;
-    }
-
-    // Blue line underneath NAV elements
-
-    &__buttons::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      width: 100%;
-      height: 5px;
-      background-color: transparent;
-      transition: background-color 0.25s ease;
-    }
-
-    &__buttons:hover::after {
-      background-color: blue;
-    }
-  }
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
 
 
+.blueline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  transition: background-color 0.25s ease;
+}
+.blueline:hover::after {
+  background-color: blue;
+}
+& img{
+  max-width:15%;
+}
+}
 
+// Search bar
 
-// SEARCH BAR
+// SEARCH BAR / INPUT SPACE
 
 .search {
-    position: relative;
-    display: flex;
-    align-items: center;
-  
-  
-    &__input {
-      padding: 8px 12px; 
-      border: 3px solid #ccc;
-      border-radius: 4px;
-      transition: border-color 0.3s, box-shadow 0.3s; 
-      margin-top: 70px;
-      width: 80%;
-      
-// Makes the outline of the search bar blue when clicked on
+  position: relative;
+  display: flex;
+  align-items: center;
 
-      &:focus {
-        outline: none;
-        border-color: #06befb;
-        box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
-      }
-    }
 
-// GRID BUTTONS
-
-// Makes the fill/stroke grey when hovered. Encountered lots of problems here.
-    .svg-icon {
-      stroke: #06befb;
-      transition: fill 0.3s, stroke 0.3s;
-  
-      
-      &:hover {
-        fill: #ccc;
-        stroke: #ccc;
-      }
-    }
-  
-// For the last three buttons, when hovered, a grey background color appears
-
-    &__link:hover {
-      background-color: grey;
-    }
-  
-    &__text {
-      text-decoration: none;
-      color: black;
+  &__input {
+    padding: 8px 12px; 
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    margin-top: 70px;
+    width: 80%;
+    
+    &:focus {
+      outline: none;
+      border-color: #06befb;
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
     }
   }
 
+  &__button {
+    position: absolute;
+    right: 21%;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 4vh;
+    height: 4vh;
+    background-image: url("/Images/Glass.jpg");
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+  }
+}
 
-  // CARDS
+//Buttons for grid items
 
+.grid-container {
+  display: grid;
+  gap: 10px;
+  width: 30%;
+}
 
-  card {
-    position: relative;
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    flex: 1;
-    max-width: calc(33.33% - 20px);
-    transition: background-color 0.3s; // Smooth transition for hover effect
-    margin: 10px;
-  
-    & img {
-      max-width: 100%;
-    }
-  
-    &__content {
-      font-size: 16px;
-    }
-  
-// Heart button at the top right of cards. Not toggleable.
+.grid-item {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
 
-    &__heart {
-      position: absolute;
-      top: 20px;
-      right: 30px;
-      font-size: 20px;
-      color: red;
-      border: none;
-      background-color: transparent;
-      cursor: pointer;
-    }
-  
-//making the location for the cards gray
+  & svg {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .svg-icon {
+    stroke: #06befb;
+    transition: fill 0.1s, stroke 0.1s;
 
-    &__location {
-      color: gray;
-    }
-  
-
-    // Makes the color of the card light blue when hovered
+    
     &:hover {
-      background-color: #add8e6; // Light blue hover effect for the whole card
+      fill: #ccc;
+      stroke: #ccc;
     }
   }
-  
+
+  &__link:hover {
+    stroke:#ccc;
+  }
+
+  &__text {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  max-width: 20%;
+  transition: background-color 0.3s; 
+  margin: 10px;
+
+  & img {
+    max-width: 100%;
+  }
+
+  &__content {
+    font-size: 16px;
+  }
+
+  &__heart {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    color: red;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__text {
+    position: fixed;
+    bottom: 20px; // Distance from the bottom of the card
+    left: 10px; // Distance from the left side of the card
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5); // Optional: improves readability
+    padding: 5px; // Optional: space inside the text box
+  }
+
+  &__location {
+    color: gray;
+  }
+
+  &:hover {
+    background-color: #add8e6; 
+  }
+}
+
+
+
+
+
 
 
