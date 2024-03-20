@@ -23,7 +23,7 @@ For the grid items, i copyed the SVG code from FINN's site. It was an big challe
 
 
 ## page-screenshot2.html - Lauritz
-
+ 
 
 
 

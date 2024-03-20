@@ -8,15 +8,16 @@
 // HEADER / NAV BAR BLUE LINE UNDERNEATH WHEN HOVERED
 
 
-h1, h2{
+h1,
+h2 {
   text-align: left
 }
 
-h2{ 
+h2 {
   margin-top: 8%
 }
 
-p{
+p {
   max-width: 60%;
 }
 
@@ -26,21 +27,23 @@ p{
   transition: color 0.3s ease;
 
 
-.blueline::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  height: 3px;
-  transition: background-color 0.25s ease;
-}
-.blueline:hover::after {
-  background-color: blue;
-}
-& img{
-  max-width:15%;
-}
+  .blueline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    transition: background-color 0.25s ease;
+  }
+
+  .blueline:hover::after {
+    background-color: blue;
+  }
+
+  & img {
+    max-width: 15%;
+  }
 }
 
 // Search bar
@@ -54,13 +57,13 @@ p{
 
 
   &__input {
-    padding: 8px 12px; 
+    padding: 8px 12px;
     border: 2px solid #ccc;
     border-radius: 4px;
-    transition: border-color 0.3s, box-shadow 0.3s; 
+    transition: border-color 0.3s, box-shadow 0.3s;
     margin-top: 70px;
     width: 80%;
-    
+
     &:focus {
       outline: none;
       border-color: #06befb;
@@ -102,11 +105,12 @@ p{
     display: block;
     margin-bottom: 10px;
   }
+
   .svg-icon {
     stroke: #06befb;
     transition: fill 0.1s, stroke 0.1s;
 
-    
+
     &:hover {
       fill: #ccc;
       stroke: #ccc;
@@ -114,7 +118,7 @@ p{
   }
 
   &__link:hover {
-    stroke:#ccc;
+    stroke: #ccc;
   }
 
   &__text {
@@ -141,7 +145,7 @@ p{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   flex: 1;
   max-width: 20%;
-  transition: background-color 0.3s; 
+  transition: background-color 0.3s;
   margin: 10px;
 
   & img {
@@ -162,6 +166,7 @@ p{
     background-color: transparent;
     cursor: pointer;
   }
+
   &__text {
     position: fixed;
     bottom: 20px; // Distance from the bottom of the card
@@ -176,87 +181,80 @@ p{
   }
 
   &:hover {
-    background-color: #add8e6; 
+    background-color: #add8e6;
   }
 }
 
 
 //page two
-.login-card{
-max-width: 50%;
+.login-card {
+  max-width: 50%;
 
-&__login {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 8px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-sizing: border-box;
-  background-color: rgb(236, 234, 234);
+  &__login {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(236, 234, 234);
 
-  &:focus {
-    outline: none;
-    border-color: #06befb;
-    box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    &:focus {
+      outline: none;
+      border-color: #06befb;
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    }
+  }
+
+  &__login-hint {
+    display: block;
+    text-align: left;
+    color: #757575;
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+  }
+
+  //Styling for checkbox
+  &__checkbox {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__checkbox-input {
+    margin-right: 10px;
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  //Styling for log in button
+  &__button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+
+  }
+
+  //Styling for create acc button 
+  &__button--secondary {
+    background: none;
+    color: #007bff;
+    padding: 12px;
+
   }
 }
-
-&__login-hint {
-  display: block;
-  text-align: left;
-  color: #757575;
-  font-size: 0.8rem;
-  margin-bottom: 16px;
-}
-//Styling for checkbox
-&__checkbox {
-  margin-top: 30px;
-  margin-bottom: 40px;
-}
-
-&__checkbox-label {
-  display: flex;
-  align-items: center;
-  margin: 0;
-}
-
-&__checkbox-input {
-  margin-right: 10px;
-}
-
-&__checkbox-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-//Styling for log in button
-&__button {
-  width: 100%;
-  padding: 12px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 4px;
-  background: #007bff;
-  color: white;
-  cursor: pointer;
-  text-transform: uppercase;
-
-}
-
-//Styling for create acc button 
-&__button--secondary {
-  background: none;
-  color: #007bff;
-  padding: 12px;
-
-}
-}
-
-
-
-
-
-
-
-
