@@ -139,13 +139,10 @@ p {
 
 .card {
   position: relative;
-  background-color: #f0f0f0;
+  background-color: none;
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  flex: 1;
+  border-radius: 3%;
   max-width: 20%;
-  transition: background-color 0.3s;
   margin: 10px;
 
   & img {
@@ -161,7 +158,7 @@ p {
     top: 20px;
     right: 30px;
     font-size: 20px;
-    color: red;
+    color: #d91f0a;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -169,11 +166,11 @@ p {
 
   &__text {
     position: fixed;
-    bottom: 20px; // Distance from the bottom of the card
-    left: 10px; // Distance from the left side of the card
+    bottom: 20px;
+    left: 10px;
     color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.5); // Optional: improves readability
-    padding: 5px; // Optional: space inside the text box
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
   }
 
   &__location {
@@ -181,7 +178,7 @@ p {
   }
 
   &:hover {
-    background-color: #add8e6;
+    background-color: #f1f9ff;
   }
 }
 

@@ -182,6 +182,7 @@
 }
 
 //RECCOMONDATIONS
+
 .reccomended {
   display: flex;
   align-items: center;
@@ -209,13 +210,10 @@
 
 .card {
   position: relative;
-  background-color: #f0f0f0;
+  background-color: none;
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  flex: 1;
+  border-radius: 3%;
   max-width: 100%;
-  transition: background-color 0.3s;
   margin: 10px;
 
   & img {
@@ -231,7 +229,7 @@
     top: 20px;
     right: 30px;
     font-size: 20px;
-    color: red;
+    color: #d91f0a;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -251,7 +249,7 @@
   }
 
   &:hover {
-    background-color: #add8e6;
+    background-color: #f1f9ff;
   }
 }
 
@@ -332,7 +330,7 @@
     margin-top: 10px;
     border: none;
     border-radius: 4px;
-    background: #007bff;
+    background: #0063fb;
     color: white;
     cursor: pointer;
     text-transform: uppercase;
@@ -433,5 +431,14 @@
   .textbox img {
     max-width: 27%;
     margin-bottom: 20px;
+  }
+
+  & a{
+    color: #0063fb;
+    text-decoration: none;
+  }
+
+  & a:hover{
+    text-decoration: underline;
   }
 }
