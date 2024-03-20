@@ -1,87 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="Screenshots for page 2" />
-    <title>Screenshot 2 page</title>
-    <link rel="stylesheet" href="assets/styles/style.css" />
-  </head>
-  <body>
-      <div class="content">
-        <div class="textbox">
-          <img src="Images/Phone_img.png" alt="Image of iphone" />
-          <p>
-            Logg inn for å sende meldinger, lagre favoritter og søk. Du får også
-            varsler når det skjer noe nytt!
-          </p>
-          <p>Problemer med innloggingen?  <a href="/">Her kan du finne hjelp</a></p>
-        
-          <a href="/">Tilbake til FINN</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="Screenshots for page 2" />
+  <title>Screenshot 2 page</title>
+  <link rel="stylesheet" href="assets/styles/style.css" />
+</head>
+
+<body>
+  <div class="content">
+    <div class="textbox">
+      <img src="Images/Phone_img.png" alt="Image of iphone" />
+      <p>
+        Logg inn for å sende meldinger, lagre favoritter og søk. Du får også
+        varsler når det skjer noe nytt!
+      </p>
+      <p>Problemer med innloggingen? <a href="/">Her kan du finne hjelp</a></p>
+
+      <a href="/">Tilbake til FINN</a>
+    </div>
+
+    <div class="login-card">
+      <a href="/"><img src="Images/Finnlogo.png" alt="Finn Logo" class="login-card__logo" /></a>
+      <img src="Images/Schibsted_logo.png" alt="Schibsted Logo" class="login-card__logo2" />
+
+      <h2 class="login-card__title">Logg inn</h2>
+
+      <input type="text" placeholder="Skriv inn din e-postadresse *" class="login-card__login" />
+      <span class="login-card__login-hint">*Nødvendig felt</span>
+      <input type="password" placeholder="Vennligst oppgi passordet ditt *" class="login-card__login" />
+      <span class="login-card__login-hint">*Nødvendig felt</span>
+
+      <div class="login-card__actions">
+        <a href="#" class="login-card__link">Glemt passord?</a>
+
+        <div class="login-card__checkbox-container">
+          <label class="login-card__checkbox-label">
+            <input type="checkbox" class="login-card__checkbox-input" />
+            Hold meg innlogget
+          </label>
+          <a href="/"><img class="login-card__checkbox-image" src="Images/info_icon.jpg" alt="Information Icon" />
+          </a>
         </div>
 
-        <div class="login-card">
-          <a href="/"
-            ><img
-              src="Images/Finnlogo.png"
-              alt="Finn Logo"
-              class="login-card__logo"
-          /></a>
-          <img
-            src="Images/Schibsted_logo.png"
-            alt="Schibsted Logo"
-            class="login-card__logo2"
-          />
-
-          <h2 class="login-card__title">Logg inn</h2>
-
-          <input
-            type="text"
-            placeholder="Skriv inn din e-postadresse *"
-            class="login-card__login"
-          />
-          <span class="login-card__login-hint">*Nødvendig felt</span>
-          <input
-            type="password"
-            placeholder="Vennligst oppgi passordet ditt *"
-            class="login-card__login"
-          />
-          <span class="login-card__login-hint">*Nødvendig felt</span>
-
-          <div class="login-card__actions">
-            <a href="#" class="login-card__link">Glemt passord?</a>
-
-            <div class="login-card__checkbox-container">
-              <label class="login-card__checkbox-label">
-                <input type="checkbox" class="login-card__checkbox-input" />
-                Hold meg innlogget
-              </label>
-              <a href="/"
-                ><img
-                  class="login-card__checkbox-image"
-                  src="Images/info_icon.jpg"
-                  alt="Information Icon"
-                />
-              </a>
-            </div>
-
-            <button type="submit" class="login-card__button">Logg på</button>
-            <button
-              type="button"
-              class="login-card__button login-card__button--secondary"
-            >
-              Opprett ny konto
-            </button>
-          </div>
-        </div>
+        <button type="submit" class="login-card__button">Logg på</button>
+        <button type="button" class="login-card__button login-card__button--secondary">
+          Opprett ny konto
+        </button>
       </div>
+    </div>
+  </div>
 
-      <div class="login-card__footer">
-        <a href="/" class="login-card__footer-link">Hjelp</a>
-        <a href="/" class="login-card__footer-link">Personvernerklæring</a>
-        <a href="/" class="login-card__footer-link">Vilkår</a>
-        <a href="/" class="login-card__footer-link">Om Schibsted-konto</a>
-      </div>
-    </main>
-  </body>
+  <div class="login-card__footer">
+    <a href="/" class="login-card__footer-link">Hjelp</a>
+    <a href="/" class="login-card__footer-link">Personvernerklæring</a>
+    <a href="/" class="login-card__footer-link">Vilkår</a>
+    <a href="/" class="login-card__footer-link">Om Schibsted-konto</a>
+  </div>
+  </main>
+</body>
 </html>
