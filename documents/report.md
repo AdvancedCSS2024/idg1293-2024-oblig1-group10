@@ -14,7 +14,7 @@ We started by drawing the up the different components that you find in our versi
 
 Håkon started by creating the layout for the page "page-screenshot1.html".
 I first started on the top, and worked my way down. I tried to commit and sync my changes each time i was working on the project. I ran into some problems because i work on two separate computers, but eventually things worked out. 
-For the grid items, i copyed the SVG code from FINN's site. It was an big challenge to get the icons to change color from blue to gray when hovered. Eventually, it kind of worked. Better on some icons than the others.. e.g. the car. Very nice "refreshing" my grid knowledge.. 
+For the grid items, i copyed the SVG code from FINN's site. It was an big challenge to get the icons to change color from blue to gray when hovered. Eventually, it worked with color. e.g. the car. Very nice "refreshing" my grid knowledge.. 
 
  The cards went pretty fine, and i had a pretty good idea of how i wanted to make them. Some difficulties came up, escpecially the "heart" button in the top right corner. 
 

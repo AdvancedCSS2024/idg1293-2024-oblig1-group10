@@ -43,7 +43,7 @@
   .blueline {
     position: relative;
     text-decoration: none;
-    transition: color 0s
+
   }
 
   .blueline::after {
@@ -53,7 +53,6 @@
     bottom: -3px;
     width: 100%;
     height: 3px;
-    transition: background-color 0.25s ease;
   }
 
   .blueline:hover::after {
@@ -153,6 +152,10 @@
   display: flex;
   flex-direction: column;
 
+  & a {
+    text-decoration: none;
+  }
+
   & svg {
     width: 80%;
     height: auto;
@@ -160,14 +163,19 @@
     margin-bottom: 10px;
   }
 
+
+  &:hover {
+    color: grey;
+  }
+
+
+
   .svg-icon {
-    stroke: #06befb;
-    transition: fill 0.1s, stroke 0.1s;
+    color: #06befb;
 
 
     &:hover {
-      fill: #ccc;
-      stroke: #ccc;
+      color: grey;
     }
   }
 
@@ -348,8 +356,8 @@
   &__link {
     color: #007bff;
     display: block;
-
   }
+
 
   //Styling for checkbox
   &__checkbox {
@@ -433,12 +441,12 @@
     margin-bottom: 20px;
   }
 
-  & a{
+  & a {
     color: #0063fb;
     text-decoration: none;
   }
 
-  & a:hover{
+  & a:hover {
     text-decoration: underline;
   }
 }
