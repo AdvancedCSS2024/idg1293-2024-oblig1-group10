@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="Demo page to show all cool features">
   <title>Demo page</title>
+  <link rel="stylesheet" href="assets/styles/common.css">
+
 </head>
+
 <body>
   <!-- EDIT THIS PAGE TO SHOW HOW YOU USE ALL THE ELEMENTS IMPLEMENTED IN YOUR DESIGN SYSTEM  -->
+
+
+  <h1>
+    This is the page where we show the different elements
+  </h1>
+
+  <h1> Screenshot 1</h1>
+  <h2>The nav bar, with the blue lines underneath</h2>
+
+  <header>
+    <nav class="navbar">
+      <a class="blueline" href="/">
+        <span class="navbar__link blueline">
+          <img class="navbar__logo" src="Images/Finnlogo.png" alt="Finn.no logo">
+          Mulighetens marked</span></a>
+    </nav>
+    <p> here we can see the that when we hover the finn logo, a blue line appears. This is the same for the buttons in
+      the navbar. We use the :hover and ::after.</p>
+
+    <h2> The search bar</h2>
+
+    <div class="search">
+      <input class="search__input" type="search" id="searchInput" name="search" placeholder="Søk etter Finn Kode">
+      <button class="search__button" type="submit"></button>
+      <a href="/">
+      </a>
+    </div>
+    <p> Here we see the search bar. The button with the magnifying glass i placed on top of the input space. I styled
+      the image using Css, and moved it with the top, right, transform, width and height to get it where i wanted.</p>
+    <p> When clicked on, a blue outline appears on the search bar. This is achived using the :focus property.</p>
+
+
+    <h2> The grid buttons.</h2>
+
+    <div class="grid-container">
+      <a href="/" class="grid-item">
+        <svg class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none" viewBox="0 0 42 28"
+          part="w-icon-sofa-42-part">
+          <title>Sofa</title>
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M33.567 10.5a1.9 1.9 0 0 0-1.367.585 2.04 2.04 0 0 0-.567 1.415v2c0 .265-.101.52-.283.707a.95.95 0 0 1-.683.293H11.333a.95.95 0 0 1-.683-.293 1.02 1.02 0 0 1-.283-.707v-2c0-.53-.204-1.04-.567-1.415a1.9 1.9 0 0 0-1.367-.585c-.512 0-1.004.21-1.367.585A2.04 2.04 0 0 0 6.5 12.5v4c0 1.06.407 2.078 1.133 2.828a3.8 3.8 0 0 0 2.734 1.172h21.266a3.8 3.8 0 0 0 2.735-1.172A4.07 4.07 0 0 0 35.5 16.5v-4c0-.53-.204-1.04-.566-1.415a1.9 1.9 0 0 0-1.367-.585m-23.2 10v3m21.266-3v3m-23.2-13c0-1.591.611-3.117 1.699-4.243A5.7 5.7 0 0 1 14.233 4.5h13.534a5.7 5.7 0 0 1 4.1 1.757 6.1 6.1 0 0 1 1.7 4.243M21 15.5v-11">
+          </path>
+        </svg>
+        <span class="grid-item__text">Torget</span>
+      </a>
+    </div>
+
+    <p>Here is one of the icons from the grid menu. We copyed the SVG from the page's html. When we hover over the
+      SVG, the fill and color becomes grey. We used :hover, with color. For the last three items in the grid menu i used stroke </p>
+
+    <h2>Cards</h2>
+
+    <div class="card-container">
+      <div class="card">
+        <a href="/" class="card__link">
+          <div class="card__content">
+            <img src="Images/cooldog.jpg" alt="the coolest dog">
+        </a>
+        <button class="card__heart">&#x2665;</button>
+        <p class="card__location"> Oslo</p>
+        <h3 class card__description> Classy pug with a margherita</h3>
+      </div>
+    </div>
+    </div>
+
+    <p>For the cards we used the display flex function. When we hover the card the "box" gets a light blue tint. for
+      this we use :hover, with background-color. For the little red heart button at the top we used position
+      absolutem and a code for the heart in the HTML.</p>
+
+
+    <h1> Screenshot 2</h1>
+
+    <h2>Login card input.</h2>
+
+    <input type="text" placeholder="Skriv inn din e-postadresse *" class="login-card__login" />
+    <span class="login-card__login-hint">*Nødvendig felt</span>
+    <input type="password" placeholder="Vennligst oppgi passordet ditt *" class="login-card__login" />
+    <span class="login-card__login-hint">*Nødvendig felt</span>
+    <p> For the login input in the screenshot 2 we used some of the same :focus property as we used on the search field
+      on screenshot 1 to get a blue outline when clicked.</p>
+
+    <h2> Checkbox</h2>
+
+
+    <div class="login-card__checkbox-container">
+      <label class="login-card__checkbox-label">
+        <input type="checkbox" class="login-card__checkbox-input" />
+        Hold meg innlogget
+      </label>
+    </div>
+    <p>We added a checkbox so users can stay logged in, making it easier to use without logging in again and again.</p>
+
+    <h2>Log in and create account button</h2>
+
+    <button type="submit" class="login-card__button">Logg på</button>
+    <button type="button" class="login-card__button login-card__button--secondary">
+      Opprett ny konto
+    </button>
+
+    <p>The "Logg inn" button, styled with CSS, is big and blue for users to click and sign in. The "Opprett konto"
+      button, looking similar but without a blue background, is for new users to click and make a new account.</p>
+
 </body>
+
 </html>

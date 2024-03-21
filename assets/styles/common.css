@@ -1,0 +1,204 @@
+h1,
+h2 {
+  text-align: left;
+}
+
+h2 {
+  margin-top: 8%;
+}
+
+p {
+  max-width: 60%;
+}
+
+.blueline {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.blueline .blueline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+}
+.blueline .blueline:hover::after {
+  background-color: blue;
+}
+.blueline img {
+  max-width: 15%;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search__input {
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-top: 70px;
+  width: 80%;
+}
+.search__input:focus {
+  outline: none;
+  border-color: #06befb;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+.search__button {
+  position: absolute;
+  right: 21%;
+  top: 80%;
+  transform: translateY(-50%);
+  width: 4vh;
+  height: 4vh;
+  background-image: url("/Images/Glass.jpg");
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  width: 30%;
+}
+
+.grid-item {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.grid-item a {
+  text-decoration: none;
+}
+.grid-item svg {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+.grid-item:hover {
+  color: grey;
+}
+.grid-item .svg-icon {
+  color: #06befb;
+}
+.grid-item .svg-icon:hover {
+  color: grey;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  background-color: none;
+  padding: 15px;
+  border-radius: 3%;
+  max-width: 20%;
+  margin: 10px;
+}
+.card img {
+  max-width: 100%;
+}
+.card__content {
+  font-size: 16px;
+}
+.card__heart {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 20px;
+  color: #d91f0a;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card__text {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  color: #FFFFFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+}
+.card__location {
+  color: gray;
+}
+.card:hover {
+  background-color: #f1f9ff;
+}
+
+.login-card {
+  max-width: 50%;
+}
+.login-card__login {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgb(236, 234, 234);
+}
+.login-card__login:focus {
+  outline: none;
+  border-color: #06befb;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+}
+.login-card__login-hint {
+  display: block;
+  text-align: left;
+  color: #757575;
+  font-size: 0.8rem;
+  margin-bottom: 16px;
+}
+.login-card__checkbox {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.login-card__checkbox-label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.login-card__checkbox-input {
+  margin-right: 10px;
+}
+.login-card__checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login-card__button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.login-card__button--secondary {
+  background: none;
+  color: #007bff;
+  padding: 12px;
+}/*# sourceMappingURL=common.css.map */

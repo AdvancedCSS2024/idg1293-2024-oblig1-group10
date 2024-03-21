@@ -1,3 +1,260 @@
 // YOU MUST USE BEM HERE
 // IMPLEMENT ALL THE RULES RELATED TO THE COMPONENTS THAT ARE PART OF YOUR DESIGN SYSTEM HERE 
 // Example: input, button, card ...
+
+// PAGE ONE
+
+
+// HEADER / NAV BAR BLUE LINE UNDERNEATH WHEN HOVERED
+
+
+h1,
+h2 {
+  text-align: left
+}
+
+h2 {
+  margin-top: 8%
+}
+
+p {
+  max-width: 60%;
+}
+
+.blueline {
+  position: relative;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+
+  .blueline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+  }
+
+  .blueline:hover::after {
+    background-color: blue;
+  }
+
+  & img {
+    max-width: 15%;
+  }
+}
+
+// Search bar
+
+// SEARCH BAR / INPUT SPACE
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+
+  &__input {
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    margin-top: 70px;
+    width: 80%;
+
+    &:focus {
+      outline: none;
+      border-color: #06befb;
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 21%;
+    top: 80%;
+    transform: translateY(-50%);
+    width: 4vh;
+    height: 4vh;
+    background-image: url("/Images/Glass.jpg");
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+//Buttons for grid items
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  width: 30%;
+}
+
+
+.grid-item {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  & a {
+    text-decoration: none;
+  }
+
+  & svg {
+    width: 80%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+
+  &:hover {
+    color: grey;
+  }
+
+
+
+  .svg-icon {
+    color: #06befb;
+
+
+    &:hover {
+      color: grey;
+    }
+  }
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  background-color: none;
+  padding: 15px;
+  border-radius: 3%;
+  max-width: 20%;
+  margin: 10px;
+
+  & img {
+    max-width: 100%;
+  }
+
+  &__content {
+    font-size: 16px;
+  }
+
+  &__heart {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 20px;
+    color: #d91f0a;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__text {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  }
+
+  &__location {
+    color: gray;
+  }
+
+  &:hover {
+    background-color: #f1f9ff;
+  }
+}
+
+
+//page two
+.login-card {
+  max-width: 50%;
+
+  &__login {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(236, 234, 234);
+
+    &:focus {
+      outline: none;
+      border-color: #06befb;
+      box-shadow: 0 0 5px rgba(0, 0, 255, 0.3);
+    }
+  }
+
+  &__login-hint {
+    display: block;
+    text-align: left;
+    color: #757575;
+    font-size: 0.8rem;
+    margin-bottom: 16px;
+  }
+
+  //Styling for checkbox
+  &__checkbox {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__checkbox-input {
+    margin-right: 10px;
+  }
+
+  &__checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  //Styling for log in button
+  &__button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+
+  }
+
+  //Styling for create acc button 
+  &__button--secondary {
+    background: none;
+    color: #007bff;
+    padding: 12px;
+
+  }
+}
